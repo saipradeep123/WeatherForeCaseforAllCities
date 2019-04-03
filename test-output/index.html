@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 6 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Suite1">
+              <span class="suite-name border-failed">Suite1</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Suite1">
+                    <span>C:\Users\DELL\eclipse-workspace\TestProject\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Suite1">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Suite1">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Suite1">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Suite1">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Suite1">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Suite1">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">8 methods, 6 failed,   2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite1" class="hide-methods failed suite-Suite1"> (hide)</a> <!-- hide-methods failed suite-Suite1 -->
+                      <a href="#" panel-name="suite-Suite1" class="show-methods failed suite-Suite1"> (show)</a> <!-- show-methods failed suite-Suite1 -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite1">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="testcases.EnterCItyName_Testcases" hash-for-method="Login_process(perth)">Login_process(perth)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="testcases.EnterCItyName_Testcases" hash-for-method="Login_process(edinburgh)">Login_process(edinburgh)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="testcases.EnterCItyName_Testcases" hash-for-method="Login_process(dundee)">Login_process(dundee)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="testcases.EnterCItyName_Testcases" hash-for-method="Login_process(aberdeen)">Login_process(aberdeen)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="testcases.EnterCItyName_Testcases" hash-for-method="Login_process(stirling)">Login_process(stirling)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="testcases.EnterCItyName_Testcases" hash-for-method="Login_process(glasgow)">Login_process(glasgow)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite1 -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite1" class="hide-methods passed suite-Suite1"> (hide)</a> <!-- hide-methods passed suite-Suite1 -->
+                      <a href="#" panel-name="suite-Suite1" class="show-methods passed suite-Suite1"> (show)</a> <!-- show-methods passed suite-Suite1 -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite1">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="testcases.Browser_URL_Launch" hash-for-method="Browser_Launch(chrome)">Browser_Launch(chrome)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="testcases.Browser_URL_Launch" hash-for-method="urllaunch(http://localhost:3000/)">urllaunch(http://localhost:3000/)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite1 -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite1" class="panel Suite1">
+          <div class="suite-Suite1-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testcases.EnterCItyName_Testcases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Login_process(perth)">
+                  </a> <!-- Login_process(perth) -->
+                  <span class="method-name">Login_process</span>
+                  <span class="parameters">(perth)</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	Verifying the maximum wind speed displayed in ui for the day 2 expected [4] but found [1],
+	Verifying the maximum wind speed displayed in ui for the day 3 expected [5] but found [2],
+	Verifying the maximum wind speed displayed in ui for the day 4 expected [8] but found [5],
+	Verifying the maximum pressure for the day 4 expected [1005] but found [999],
+	Verifying the maximum wind speed displayed in ui for the day 5 expected [9] but found [8]
+	at Page_Objects.EnterCityName_Objects.verifyWeatherForeCastForAllDays(EnterCityName_Objects.java:183)
+	at testcases.EnterCItyName_Testcases.Login_process(EnterCItyName_Testcases.java:44)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Login_process(edinburgh)">
+                  </a> <!-- Login_process(edinburgh) -->
+                  <span class="method-name">Login_process</span>
+                  <span class="parameters">(edinburgh)</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	Verifying the maximum wind speed displayed in ui for the day 2 expected [5] but found [1],
+	Verifying the maximum wind speed displayed in ui for the day 3 expected [8] but found [3],
+	Verifying the maximum wind speed displayed in ui for the day 4 expected [9] but found [6],
+	Verifying the maximum pressure for the day 4 expected [1005] but found [999],
+	Verifying the maximum wind speed displayed in ui for the day 5 expected [11] but found [10]
+	at Page_Objects.EnterCityName_Objects.verifyWeatherForeCastForAllDays(EnterCityName_Objects.java:183)
+	at testcases.EnterCItyName_Testcases.Login_process(EnterCItyName_Testcases.java:44)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Login_process(dundee)">
+                  </a> <!-- Login_process(dundee) -->
+                  <span class="method-name">Login_process</span>
+                  <span class="parameters">(dundee)</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	Verifying the maximum wind speed displayed in ui for the day 2 expected [5] but found [2],
+	Verifying the maximum wind speed displayed in ui for the day 3 expected [7] but found [3],
+	Verifying the maximum wind speed displayed in ui for the day 4 expected [9] but found [7],
+	Verifying the maximum pressure for the day 4 expected [1019] but found [1014]
+	at Page_Objects.EnterCityName_Objects.verifyWeatherForeCastForAllDays(EnterCityName_Objects.java:183)
+	at testcases.EnterCItyName_Testcases.Login_process(EnterCItyName_Testcases.java:44)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Login_process(aberdeen)">
+                  </a> <!-- Login_process(aberdeen) -->
+                  <span class="method-name">Login_process</span>
+                  <span class="parameters">(aberdeen)</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	Verifying the maximum wind speed displayed in ui for the day 1 expected [4] but found [3],
+	Verifying the maximum wind speed displayed in ui for the day 2 expected [7] but found [2],
+	Verifying the maximum wind speed displayed in ui for the day 3 expected [8] but found [5],
+	Verifying the maximum wind speed displayed in ui for the day 4 expected [9] but found [6],
+	Verifying the maximum pressure for the day 4 expected [1011] but found [1006]
+	at Page_Objects.EnterCityName_Objects.verifyWeatherForeCastForAllDays(EnterCityName_Objects.java:183)
+	at testcases.EnterCItyName_Testcases.Login_process(EnterCItyName_Testcases.java:44)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Login_process(stirling)">
+                  </a> <!-- Login_process(stirling) -->
+                  <span class="method-name">Login_process</span>
+                  <span class="parameters">(stirling)</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	Verifying the maximum wind speed displayed in ui for the day 2 expected [3] but found [1],
+	Verifying the maximum wind speed displayed in ui for the day 3 expected [4] but found [2],
+	Verifying the maximum wind speed displayed in ui for the day 4 expected [6] but found [4],
+	Verifying the maximum pressure for the day 4 expected [987] but found [982],
+	Verifying the maximum wind speed displayed in ui for the day 5 expected [7] but found [6]
+	at Page_Objects.EnterCityName_Objects.verifyWeatherForeCastForAllDays(EnterCityName_Objects.java:183)
+	at testcases.EnterCItyName_Testcases.Login_process(EnterCItyName_Testcases.java:44)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Login_process(glasgow)">
+                  </a> <!-- Login_process(glasgow) -->
+                  <span class="method-name">Login_process</span>
+                  <span class="parameters">(glasgow)</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	Verifying the maximum wind speed displayed in ui for the day 2 expected [5] but found [2],
+	Verifying the maximum wind speed displayed in ui for the day 3 expected [6] but found [3],
+	Verifying the maximum wind speed displayed in ui for the day 4 expected [10] but found [6],
+	Verifying the maximum pressure for the day 4 expected [1011] but found [1006],
+	Verifying the maximum wind speed displayed in ui for the day 5 expected [11] but found [10]
+	at Page_Objects.EnterCityName_Objects.verifyWeatherForeCastForAllDays(EnterCityName_Objects.java:183)
+	at testcases.EnterCItyName_Testcases.Login_process(EnterCItyName_Testcases.java:44)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite1-class-failed -->
+          <div class="suite-Suite1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.Browser_URL_Launch</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Browser_Launch(chrome)">
+                  </a> <!-- Browser_Launch(chrome) -->
+                  <span class="method-name">Browser_Launch</span>
+                  <span class="parameters">(chrome)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="urllaunch(http://localhost:3000/)">
+                  </a> <!-- urllaunch(http://localhost:3000/) -->
+                  <span class="method-name">urllaunch</span>
+                  <span class="parameters">(http://localhost:3000/)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite1-class-passed -->
+        </div> <!-- panel Suite1 -->
+        <div panel-name="test-xml-Suite1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\DELL\eclipse-workspace\TestProject\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite1&quot;&gt;
+  &lt;test name=&quot;My test&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testcases.Browser_URL_Launch&quot;/&gt;
+      &lt;class name=&quot;testcases.EnterCItyName_Testcases&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- My test --&gt;
+&lt;/suite&gt; &lt;!-- Suite1 --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite1</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">My test (2 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite1</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite1</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite1');
+function tableData_Suite1() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(8);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'Login_process')
+data.setCell(0, 2, 'testcases.EnterCItyName_Testcases')
+data.setCell(0, 3, 12599);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'urllaunch')
+data.setCell(1, 2, 'testcases.Browser_URL_Launch')
+data.setCell(1, 3, 12412);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'Login_process')
+data.setCell(2, 2, 'testcases.EnterCItyName_Testcases')
+data.setCell(2, 3, 12036);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'Login_process')
+data.setCell(3, 2, 'testcases.EnterCItyName_Testcases')
+data.setCell(3, 3, 10817);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'Login_process')
+data.setCell(4, 2, 'testcases.EnterCItyName_Testcases')
+data.setCell(4, 3, 10098);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'Login_process')
+data.setCell(5, 2, 'testcases.EnterCItyName_Testcases')
+data.setCell(5, 3, 9922);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'Browser_Launch')
+data.setCell(6, 2, 'testcases.Browser_URL_Launch')
+data.setCell(6, 3, 8927);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'Login_process')
+data.setCell(7, 2, 'testcases.EnterCItyName_Testcases')
+data.setCell(7, 3, 8817);
+window.suiteTableData['Suite1']= { tableData: data, tableDiv: 'times-div-Suite1'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-Suite1">
+              </div> <!-- times-div-Suite1 -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite1</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.Browser_URL_Launch</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">Browser_Launch(chrome)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">urllaunch(http://localhost:3000/)</span>
+                <span class="method-start">9501 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.EnterCItyName_Testcases</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Login_process(aberdeen)</span>
+                <span class="method-start">22075 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Login_process(dundee)</span>
+                <span class="method-start">34775 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Login_process(edinburgh)</span>
+                <span class="method-start">44875 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Login_process(glasgow)</span>
+                <span class="method-start">53695 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Login_process(perth)</span>
+                <span class="method-start">64515 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Login_process(stirling)</span>
+                <span class="method-start">76554 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
