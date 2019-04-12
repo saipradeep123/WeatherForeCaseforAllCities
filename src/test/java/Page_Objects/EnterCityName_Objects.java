@@ -53,11 +53,11 @@ public class EnterCityName_Objects
 	{
 		List<WebElement> listOfElements = FiveDaysForcaseCount;
 		 System.out.println("Number of elements:" +listOfElements.size());
-		 List<String> all_elements_text=new ArrayList<>();
+		 List<String> all_elements_text=new ArrayList<String>();
 
 
 	    for (int i=0; i<listOfElements.size();i++){
-	      System.out.println("Radio button text:" + listOfElements.get(i).getText());
+	      System.out.println("Temparature is:" + listOfElements.get(i).getText());
 	      all_elements_text.add(listOfElements.get(i).getText());
 	    }
 	    Assert.assertEquals(listOfElements.size(), 5);
@@ -70,7 +70,7 @@ public class EnterCityName_Objects
 	{
 	
 		List<String> test = forecast_days_count();
-		System.out.println("Pradeep :" +test);
+		System.out.println("List of temparatures  :" +test);
 	}
 	
 	public void verifyMaxAndMinTemperature(int expectedMaxTemp,int expectedMinTemp,int day,SoftAssert softAssertion) {
@@ -173,7 +173,7 @@ public class EnterCityName_Objects
 		SoftAssert softAssertion = new SoftAssert();
 		List<WebElement> listOfElements = FiveDaysForcaseCount;
 		 System.out.println("Number of elements:" +listOfElements.size());
-		 List<String> all_elements_text=new ArrayList<>();
+		 List<String> all_elements_text=new ArrayList<String>();
 	    for (int i=0; i<listOfElements.size();i++){
 	    expectedMaxTempUi.get(i).click();
 	    verifyMaxAndMinTemperature(Integer.valueOf(expectedMaxTempUi.get(i).getText().replace("°", "").trim()), Integer.valueOf(expectedMinTempUi.get(i).getText().replace("°", "").trim()), i+1,softAssertion);
